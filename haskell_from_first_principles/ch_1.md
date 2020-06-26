@@ -11,7 +11,7 @@
 
 ## What is a function?
 * Is a relation between a set of possible inputs and a set of possible outputs
-* The input set is known as the domain. The set of possible outputs is the codomain
+* The input set is known as the domain. The set of possible outputs is the codomain &rarr; set de posibles valores
 * Relationship of inputs and outputs is defined by the function
 * Output is predictable when you know the input and the function definition
 
@@ -23,12 +23,12 @@
         * _f(x)_ = _A_
             * **_f_**: lambda or head
             * **_x_**: argument or input value
-            * **_A_**: body, the result of applying the lambda
+            * **_A_**: the result of applying the lambda
         * Consists of two parts: the head and the body
 * The act of applying a lambda function to an argument is called _application_
 
 ## Alpha equivalence
-* _Alpha equivalence_: equivalence between lambda terms
+* **_Alpha equivalence_**: equivalence between lambda terms
     * _λx.x_
     * _λd.d_
     * _λz.z_
@@ -40,7 +40,7 @@
     * 2
 * When the function is applied to an arguemnt, all instances of _x_ withing the function body must have the same value
     * (λx.x)(λy.y)z
-        * Apply left function into right function: Get (λy.y) as input for (λx.x) -> apply _x_ function to _y_ input getting _x_ result (in this case _y_)
+        * Apply left function into right function: Get (λy.y) as input for (λx.x) &rarr; apply _x_ function to _(λy.y)_ input getting _x_ result (in this case _(λy.y)_)
         * Do the same for _z_
     * [x := (λy.y)]
         * As said above: apply first function into second function
@@ -70,9 +70,9 @@
 * **_Beta normal form_**: When you cannot beta reduce (apply lambdas to arguments)
 * Application is what makes evalutation/simplification possible
 * Normal forms means there is nothing left that can be reduced
-    * λx.x -> normal form
-    * (λx.x)z -> not in beta normal form
-        * If reduced: (λx.x)z -> z (beta normal form)
+    * λx.x &rarr; normal form
+    * (λx.x)z &rarr; not in beta normal form
+        * If reduced: (λx.x)z &rarr; z (beta normal form)
 
 ## Combinators
 * Is a lambda term with no free variables
@@ -90,4 +90,5 @@
 * **_Divergence_**: reduction process never ends
     * (λx.xx)(λx.xx)
         * Reducing it would _converge_ to beta normal form
-    * λx.xx -> Not divergence, as is already reduced
+        * Recursive function
+    * λx.xx &rarr; Not divergence
