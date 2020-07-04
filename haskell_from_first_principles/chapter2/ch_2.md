@@ -1,4 +1,4 @@
-# Hello, Haskel!
+# Hello, Haskell!
 
 ## Interacting with Haskell
 * **_Prelude_**: is a library of standard functions, which are automatically loaded with `ghci` or `stack ghci`. It can be turned off, and alternatived can be used.
@@ -114,7 +114,7 @@ sayHello x =
     * `*` infix function name
 
 ## Declaring values
-* The order of delcarations in a source file doesn't matter
+* The order of declarations in a source file doesn't matter
     * Check `learn.hs`
 
 ### Troubleshooting
