@@ -33,7 +33,6 @@ third :: String -> String
 third x = drop 9 x
 
 -- Functions 3
-
 func3 :: String -> Char
 func3 x = x !! 3
 
@@ -48,5 +47,3 @@ func5 :: String
 func5 = drop 9 curryAwesome
     ++ take 4 (drop 5 curryAwesome)
     ++ take 5 curryAwesome
-
--- Function 6
